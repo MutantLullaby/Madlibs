@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Angular demo</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+</head>
+<body>
+<!--    nav    -->
+
+<nav>
+    <div class="nav-wrapper purple darken-4">
+      <a href="#" class="brand-logo center">Mad Libs</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="Test.html"><i class="material-icons">refresh</i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+<!--    fill in    -->
+
+<div class="row">
+	<form>	
+		<div class="col s3">Male Main Character: <input ng-model="maleMainCharacter" placeholder="Male Main Character"></input><br /></div>
+	    <div class="col s3">Female Main Character: <input ng-model="femaleMainCharacter" placeholder="Female Main Character"></input> <br /></div>
+	    <div class="col s3">Name of Park: <input ng-model="park" placeholder="Park Name"></input> <br /></div>
+	    <div class="col s3">Activity: <input ng-model="activity" placeholder="Activity"></input> <br /></div>
+	</form>
+</div>    
+
+<div class="row">	    
+	<form>
+		<div class="col s3">Object: <input ng-model="object" placeholder="Object"></input><br /></div>
+		<div class="col s3">topic: <input ng-model="topic" placeholder="Topic"></input><br /></div>
+		<div class="col s3">social media: <input ng-model="socialmedia" placeholder="Social media"></input><br /></div>
+		<div class="col s3">home: <input ng-model="home" placeholder="Home"></input><br /></div>
+	</form>	
+</div>	
+	
+<!--    Story    -->
+<h3>When {{ maleMainCharacter }} Met {{ femaleMainCharacter }}</h3>
+<p> One day, {{ maleMainCharacter }} wanted to do something new, so {{ maleMainCharacter }} went off to the {{ park }} to see if he'll/she'll find something to do. Once {{ maleMainCharacter }} got to place, they walked around looking for something to do. {{ maleMainCharacter }} soon cam to a stop at a bench and took out {{ object }}. He used {{ object }} till {{ femaleMainCharacter }} sat next to him. {{ maleMainCharacter }} glanced over to see what {{ femaleMainCharacter }} and smiles. "Nice {{ activity }} you got there." {{ maleMainCharacter }} returns the smile "Thanks." They soon talked about {{ topic }} and became close friends. Once the day was over they exchanged {{ socialmedia }} and went back {{ home }}.
+</p>
+ 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
+
